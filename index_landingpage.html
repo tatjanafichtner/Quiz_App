@@ -5,16 +5,23 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style_landingpage.css" />
+    <link rel="stylesheet" href="style_overall.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <title>Storytelling Quiz App</title>
   </head>
   <body>
     <header>
-      <h1 id="app-title">Storytelling Quiz</h1>
+      <div class="title-box">
+        <h1 id="app-title">Storytelling Quiz</h1>
+      </div>
     </header>
     <main>
       <section id="content-area-question-cards">
-        <article class="question-cards">
+        <article>
+          <!--Hier noch Bookmark-IMG-einfügen-->
           <h1 class="question">Question:</h1>
           <p class="question" id="1">Hier Frage 1</p>
           <button class="action-btn" type="button">Show answer</button>
@@ -25,7 +32,7 @@
             <a>Tag 3</a>
           </div>
         </article>
-        <article class="question-cards">
+        <article>
           <h1 class="question">Question:</h1>
           <p class="question" id="1">Hier Frage 2</p>
           <button class="action-btn" type="button">Show answer</button>
@@ -36,7 +43,7 @@
             <a>Tag 3</a>
           </div>
         </article>
-        <article class="question-cards">
+        <article>
           <h1 class="question">Question:</h1>
           <p class="question" id="1">Hier Frage 3</p>
           <button class="action-btn" type="button">Show answer</button>
@@ -47,7 +54,7 @@
             <a>Tag 3</a>
           </div>
         </article>
-        <article class="question-cards">
+        <article>
           <h1 class="question">Question:</h1>
           <p class="question" id="1">Hier Frage 4</p>
           <button class="action-btn" type="button">Show answer</button>
@@ -58,7 +65,7 @@
             <a>Tag 3</a>
           </div>
         </article>
-        <article class="question-cards">
+        <article>
           <h1 class="question">Question:</h1>
           <p class="question" id="1">Hier Frage 5</p>
           <button class="action-btn" type="button">Show answer</button>
@@ -73,31 +80,15 @@
     </main>
     <footer>
       <nav>
-        <!--References to index.htmls needed-->
-        <img
-          class="navbar-img"
-          id="Home"
-          src="/Quiz_App/navbar_icons/baseline_home_black_24dp.png"
-          href="#"
-        />
-        <img
-          class="navbar-img"
-          id="Bookmarks"
-          src="navbar_icons/baseline_bookmark_black_24dp.png"
-          href="/Quiz_App/index_bookmarks.html"
-        />
-        <img
-          class="navbar-img"
-          id="Create"
-          src="navbar_icons/baseline_article_black_24dp.png"
-          href="#"
-        />
-        <img
-          class="navbar-img"
-          id="Profile"
-          src="navbar_icons/baseline_account_circle_black_24dp.png"
-          href="/Quiz_App/index_profile.html"
-        />
+        <!--Still lacks references to index.htmls-->
+        <a href="#"><i class="material-icons" id="Home">home</i></a>
+        <a href="/Quiz_App/index_bookmarks.html"
+          ><i class="material-icons" id="Bookmarks">bookmark</i></a
+        >
+        <a href="#"><i class="material-icons" id="Create">article</i></a>
+        <a href="/Quiz_App/index_profile.html"
+          ><i class="material-icons" id="Profile">account_circle</i></a
+        >
       </nav>
     </footer>
   </body>

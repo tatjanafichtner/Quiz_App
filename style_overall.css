@@ -1,0 +1,84 @@
+@import "./style_components.css";
+@import "./style_peripheral-sites.css";
+@import url("https://fonts.googleapis.com/css2?family=Glory:wght@300&display=swap");
+
+/*
+##############
+OVERALL-STYLES
+##############
+*/
+
+:root {
+  --primary-clr: blanchedalmond;
+  --secondary-clr: #deb887;
+  --highlight-clr: rgb(91, 148, 113);
+}
+
+body {
+  box-sizing: border-box;
+  background-color: var(--primary-clr);
+  font-family: "Glory", sans-serif;
+}
+
+/*
+########
+HEADER
+########
+*/
+
+.title-box {
+  background-color: var(--primary-clr);
+  position: fixed;
+  width: 100vw;
+  height: 7em;
+  top: 0px;
+  left: 0px;
+}
+
+#app-title {
+  width: 85vw;
+  background-color: var(--secondary-clr);
+  border-style: dotted;
+  border-color: var(--primary-clr);
+  padding: 0.5em;
+  left: 1em;
+  color: blanchedalmond;
+  text-shadow: 2px 2px grey;
+  text-align: center;
+  position: fixed;
+  z-index: 1;
+}
+
+#app-title::before {
+  content: "📚 ";
+}
+
+/*
+#########
+FOOTER
+#########
+*/
+
+nav {
+  display: flex;
+  position: fixed;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 3em;
+  left: 0px;
+  bottom: 0px;
+  background-color: var(--secondary-clr);
+}
+
+nav a:link {
+  color: currentColor;
+}
+
+/*  How to set size?  */
+.material-icons {
+  display: inline-block;
+  filter: invert(85%) sepia(26%) saturate(255%) hue-rotate(345deg)
+    brightness(105%) contrast(102%);
+}

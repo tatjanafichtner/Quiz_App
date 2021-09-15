@@ -1,0 +1,96 @@
+:root {
+  --primary-clr: blanchedalmond;
+  --secondary-clr: #deb887;
+  --highlight-clr: rgb(91, 148, 113);
+}
+
+/*
+#################
+QESTION CARD BOX
+#################
+*/
+
+section#content-area-question-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+article {
+  background-color: var(--highlight-clr);
+  color: var(--primary-clr);
+  border-radius: 12px;
+  width: 80vw;
+  position: relative;
+  left: 1em;
+  min-width: 20px;
+  padding: 1em;
+  margin: 0.2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+h1.question {
+  font-size: 24px;
+  color: var(--secondary-clr);
+  margin-top: 0px;
+}
+
+p.question,
+p.answer {
+  position: relative;
+  top: -10px;
+  left: 15px;
+}
+
+/*
+##########
+TAG AREA
+##########
+*/
+
+.tag-area a {
+  background-color: var(--primary-clr);
+  border-radius: 12px;
+  border-color: transparent;
+  padding: 5px;
+  margin: 10px;
+  align-self: center;
+  color: var(--highlight-clr);
+  font-size: 0.7em;
+}
+
+a {
+  display: inline-block;
+}
+
+/*
+########
+BUTTONS
+########
+*/
+
+.action-btn {
+  background-color: var(--secondary-clr);
+  border-radius: 12px;
+  border-color: transparent;
+  padding: 10px;
+  margin: 20px;
+  align-self: center;
+  color: var(--highlight-clr);
+  font-size: 1em;
+}
+
+.logout-btn {
+  background-color: var(--highlight-clr);
+  border-radius: 12px;
+  border-color: transparent;
+  padding: 10px;
+  margin: 20px;
+  align-self: center;
+  color: var(--highlight-clr);
+  font-size: 1em;
+}
