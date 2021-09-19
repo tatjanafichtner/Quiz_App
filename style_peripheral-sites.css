@@ -10,8 +10,68 @@ OVERALL-STYLES
   --highlight-clr: rgb(91, 148, 113);
 }
 
+section#content-area-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 /* 
 ############
 PROFILE PIC
 ############
 */
+
+div.profile-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/*Why is there no border color? */
+img#profile-pic {
+  border-radius: 100px;
+  max-width: 200px;
+  width: 150px;
+  border-color: var(--secondary-clr);
+}
+
+.profile-div h2 {
+  font-size: 24px;
+  color: var(--highlight-clr);
+  margin: 1em;
+}
+
+/*
+###############
+ABOUT & SKILLS
+###############
+*/
+
+p#about-text {
+  background-color: var(--secondary-clr);
+  width: 25em;
+  padding: 10px;
+  color: var(--highlight-clr);
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+/* How to align H2 justified to p above? */
+#skills-hl {
+  align-self: flex-start;
+  color: var(--secondary-clr);
+}
+
+div#skill-tags a {
+  background-color: var(--secondary-clr);
+  border-radius: 12px;
+  border-color: transparent;
+  padding: 5px;
+  margin: 10px;
+  color: var(--highlight-clr);
+  font-size: 0.7em;
+  letter-spacing: ;
+}

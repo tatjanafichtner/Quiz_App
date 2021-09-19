@@ -1,6 +1,7 @@
 @import "./style_components.css";
 @import "./style_peripheral-sites.css";
 @import url("https://fonts.googleapis.com/css2?family=Glory:wght@300&display=swap");
+/* Night modus still to be defined*/
 
 /*
 ##############
@@ -9,9 +10,11 @@ OVERALL-STYLES
 */
 
 :root {
-  --primary-clr: blanchedalmond;
+  --primary-clr: #ffebcd;
   --secondary-clr: #deb887;
   --highlight-clr: rgb(91, 148, 113);
+  --hover-clr-highlight: rgb(69, 117, 88);
+  --hover-clr-regular: #e09e48;
 }
 
 body {
@@ -35,7 +38,7 @@ HEADER
   left: 0px;
 }
 
-#app-title {
+.app-title {
   width: 85vw;
   background-color: var(--secondary-clr);
   border-style: dotted;
@@ -46,11 +49,23 @@ HEADER
   text-shadow: 2px 2px grey;
   text-align: center;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
 }
 
-#app-title::before {
+h1#page-one::before {
   content: "📚 ";
+}
+
+h1#page-two::before {
+  content: "💡 ";
+}
+
+h1#page-three::before {
+  content: "🙌🏼 ";
+}
+
+h1#page-four::before {
+  content: "👩🏼 ";
 }
 
 /*
@@ -72,13 +87,29 @@ nav {
   background-color: var(--secondary-clr);
 }
 
+nav a {
+  padding: 0.3em;
+}
+
 nav a:link {
   color: currentColor;
 }
 
-/*  How to set size?  */
+/*  How to set size? Why do they come out in different colors? */
 .material-icons {
   display: inline-block;
   filter: invert(85%) sepia(26%) saturate(255%) hue-rotate(345deg)
     brightness(105%) contrast(102%);
+}
+
+a:hover {
+  background-color: var(--hover-clr-regular);
+  border-radius: 50%;
+  transition-timing-function: ease-in;
+  transition-duration: 0.5s;
+}
+
+nav i.material-icons:hover {
+  transform: scale(1.2);
+  transition-duration: 0.5s;
 }

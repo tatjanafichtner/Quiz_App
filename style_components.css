@@ -1,7 +1,13 @@
 :root {
-  --primary-clr: blanchedalmond;
+  --primary-clr: #ffebcd;
   --secondary-clr: #deb887;
   --highlight-clr: rgb(91, 148, 113);
+  --hover-clr-highlight: rgb(69, 117, 88);
+  --hover-clr-regular: #e09e48;
+}
+
+main {
+  margin-top: 112px;
 }
 
 /*
@@ -22,7 +28,6 @@ article {
   color: var(--primary-clr);
   border-radius: 12px;
   width: 80vw;
-  position: relative;
   left: 1em;
   min-width: 20px;
   padding: 1em;
@@ -41,7 +46,6 @@ h1.question {
 
 p.question,
 p.answer {
-  position: relative;
   top: -10px;
   left: 15px;
 }
@@ -52,6 +56,7 @@ TAG AREA
 ##########
 */
 
+/* Why is alignment not working? */
 .tag-area a {
   background-color: var(--primary-clr);
   border-radius: 12px;
@@ -63,8 +68,11 @@ TAG AREA
   font-size: 0.7em;
 }
 
-a {
-  display: inline-block;
+/* Hover doesn't work - why?*/
+
+a:hover {
+  border-color: var(--hover-clr-regular);
+  transition-duration: 0.5s;
 }
 
 /*
@@ -84,13 +92,25 @@ BUTTONS
   font-size: 1em;
 }
 
+.action-btn:hover {
+  border-color: var(--hover-clr-regular);
+  transition-timing-function: ease-in;
+  transition-duration: 0.5s;
+}
+
 .logout-btn {
   background-color: var(--highlight-clr);
   border-radius: 12px;
   border-color: transparent;
   padding: 10px;
-  margin: 20px;
   align-self: center;
-  color: var(--highlight-clr);
+  color: var(--primary-clr);
   font-size: 1em;
+  align-self: center;
+}
+
+.logout-btn:hover {
+  background-color: var(--hover-clr-highlight);
+  transition-timing-function: ease-in;
+  transition-duration: 0.5s;
 }
